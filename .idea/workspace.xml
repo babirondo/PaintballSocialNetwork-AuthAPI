@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01405afc-49c7-48cc-91d6-a39b22b2c050" name="Default" comment="novo commit da maquina 2">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+    <list default="true" id="01405afc-49c7-48cc-91d6-a39b22b2c050" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/.idea/PaintballSocialNetwork-Auth.iml" afterPath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/.idea/PaintballSocialNetwork-Auth.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/PaintballSocialNetwork-AuthAPI.iml" afterPath="$PROJECT_DIR$/.idea/PaintballSocialNetwork-AuthAPI.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
@@ -22,8 +24,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="231">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -99,11 +101,11 @@
     <option name="width" value="1400" />
     <option name="height" value="830" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -118,7 +120,31 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PaintballSocialNetwork-Auth" type="cbb8eebc:String" user="PaintballSocialNetwork-Auth" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PaintballSocialNetwork-Auth" type="cbb8eebc:String" user="PaintballSocialNetwork-Auth" />
+              <item name="C:\Users\bruno.rodrigues\Documents\SourceCode\PaintballSocialNetwork-Auth" type="cbb8eebc:String" user="C:\Users\bruno.rodrigues\Documents\SourceCode\PaintballSocialNetwork-Auth" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PaintballSocialNetwork-AuthAPI" type="cbb8eebc:String" user="PaintballSocialNetwork-AuthAPI" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PaintballSocialNetwork-AuthAPI" type="cbb8eebc:String" user="PaintballSocialNetwork-AuthAPI" />
+              <item name="PaintballSocialNetwork-AuthAPI" type="cbb8eebc:String" user="PaintballSocialNetwork-AuthAPI" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,7 +160,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
@@ -164,15 +190,24 @@
       <option name="presentableId" value="Default" />
       <updated>1522623455071</updated>
       <workItem from="1522623456337" duration="40000" />
-      <workItem from="1523611283064" duration="360000" />
+      <workItem from="1523611283064" duration="816000" />
     </task>
+    <task id="LOCAL-00001" summary="novo commit da maquina 2">
+      <created>1523611651108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523611651108</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400000" />
+    <option name="totallyTimeSpent" value="856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -212,11 +247,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

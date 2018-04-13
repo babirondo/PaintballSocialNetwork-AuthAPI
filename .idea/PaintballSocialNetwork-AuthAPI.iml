@@ -139,5 +139,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="PaintballSocialNetwork-Auth" />
+    <orderEntry type="module" module-name="PaintballSocialNetwork-Front" />
   </component>
 </module>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PaintballSocialNetwork-Auth/.idea/PaintballSocialNetwork-Auth.iml" filepath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/.idea/PaintballSocialNetwork-Auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PaintballSocialNetwork-AuthAPI.iml" filepath="$PROJECT_DIR$/.idea/PaintballSocialNetwork-AuthAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PaintballSocialNetwork-Front/.idea/PaintballSocialNetwork-Front.iml" filepath="$PROJECT_DIR$/../PaintballSocialNetwork-Front/.idea/PaintballSocialNetwork-Front.iml" />
     </modules>
   </component>
 </project>
