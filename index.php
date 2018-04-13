@@ -9,6 +9,7 @@ include "vendor/autoload.php";
 
 
 /*
+ * testando maquina 2
 $app = new App( array(
     'debug' => true,
     'templates.path' => './templates'
