@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01405afc-49c7-48cc-91d6-a39b22b2c050" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/.idea/PaintballSocialNetwork-Auth.iml" afterPath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/.idea/PaintballSocialNetwork-Auth.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/PaintballSocialNetwork-AuthAPI.iml" afterPath="$PROJECT_DIR$/.idea/PaintballSocialNetwork-AuthAPI.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/index.php" afterPath="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/index.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/../PaintballSocialNetwork-Front/README.md" afterPath="$PROJECT_DIR$/../PaintballSocialNetwork-Front/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -31,15 +28,40 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PaintballSocialNetwork-Auth/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../PaintballSocialNetwork-Front/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="42">
+                <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../PaintballSocialNetwork-Front" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/../PaintballSocialNetwork-Auth/index.php" />
+        <option value="$PROJECT_DIR$/../PaintballSocialNetwork-Front/README.md" />
       </list>
     </option>
   </component>
@@ -125,21 +147,12 @@
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PaintballSocialNetwork-Auth" type="cbb8eebc:String" user="PaintballSocialNetwork-Auth" />
+              <item name="PaintballSocialNetwork-Front" type="cbb8eebc:String" user="PaintballSocialNetwork-Front" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PaintballSocialNetwork-Auth" type="cbb8eebc:String" user="PaintballSocialNetwork-Auth" />
-              <item name="C:\Users\bruno.rodrigues\Documents\SourceCode\PaintballSocialNetwork-Auth" type="cbb8eebc:String" user="C:\Users\bruno.rodrigues\Documents\SourceCode\PaintballSocialNetwork-Auth" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PaintballSocialNetwork-AuthAPI" type="cbb8eebc:String" user="PaintballSocialNetwork-AuthAPI" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PaintballSocialNetwork-AuthAPI" type="cbb8eebc:String" user="PaintballSocialNetwork-AuthAPI" />
-              <item name="PaintballSocialNetwork-AuthAPI" type="cbb8eebc:String" user="PaintballSocialNetwork-AuthAPI" />
+              <item name="PaintballSocialNetwork-Front" type="cbb8eebc:String" user="PaintballSocialNetwork-Front" />
+              <item name="C:\Users\bruno.rodrigues\Documents\SourceCode\PaintballSocialNetwork-Front" type="cbb8eebc:String" user="C:\Users\bruno.rodrigues\Documents\SourceCode\PaintballSocialNetwork-Front" />
             </path>
           </expand>
           <select />
@@ -190,7 +203,7 @@
       <option name="presentableId" value="Default" />
       <updated>1522623455071</updated>
       <workItem from="1522623456337" duration="40000" />
-      <workItem from="1523611283064" duration="816000" />
+      <workItem from="1523611283064" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="novo commit da maquina 2">
       <created>1523611651108</created>
@@ -199,11 +212,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523611651108</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="novo commit 2 da maquina 2">
+      <created>1523612110861</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523612110861</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="856000" />
+    <option name="totallyTimeSpent" value="904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -238,7 +258,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="novo commit da maquina 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="novo commit da maquina 2" />
+    <MESSAGE value="novo commit 2 da maquina 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="novo commit 2 da maquina 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -250,6 +271,25 @@
         <state relative-caret-position="231">
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PaintballSocialNetwork-Auth/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PaintballSocialNetwork-Front/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="42">
+            <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
