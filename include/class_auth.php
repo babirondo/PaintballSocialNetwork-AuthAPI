@@ -1,6 +1,8 @@
 <?php
 namespace raiz;
-set_time_limit( 2 );
+
+error_reporting(E_ALL  );
+
 class Auth{
     function __construct( ){
         require("include/class_db.php");
@@ -37,18 +39,21 @@ class Auth{
             $this->con->navega(null);
             //autenticado
             $data =   array(	"resultado" =>  "SUCESSO",
-                    "email" => $this->con->dados["email"],
-                    "id_usuario" => $this->con->dados["id_usuario"],
-                    "nome" => $this->con->dados["nome"]);
+                "email" => $this->con->dados["email"],
+                "id_usuario" => $this->con->dados["id_usuario"],
+                "nome" => $this->con->dados["nome"]);
+
+
             return $response->withJson($data, 200)->withHeader('Content-Type', 'application/json');
         }
         else {
 
             // nao encontrado
             $data =    array(	"resultado" =>  "ERRO",
-                    "erro" => "Usuário/Senha não encontrado");
+                "erro" => "Usuário/Senha não encontrado");
 
-            return $response->withStatus(204)
+
+            return $response->withStatus(200)
                 ->withHeader('Content-type', 'application/json;charset=utf-8')
                 ->withJson($data);
 
