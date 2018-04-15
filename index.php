@@ -1,6 +1,6 @@
 <?php
 namespace raiz;
-//error_reporting(E_ALL ^ E_DEPRECATED);
+//error_reporting(E_ALL  );
 
 
 use Slim\Views\PhpRenderer;
@@ -9,7 +9,6 @@ include "vendor/autoload.php";
 
 
 /*
- * testando maquina 3
 $app = new App( array(
     'debug' => true,
     'templates.path' => './templates'
@@ -22,20 +21,28 @@ $container['renderer'] = new PhpRenderer("./templates");
 
 
 
+$app->get('/healthcheck/', function ($request, $response, $args)  use ($app )   {
+    require_once("health-check/healthcheck.php");
 
-$app->post('/Auth', function ($request, $response, $args)  use ($app )   {
-    require_once("include/class_auth.php");
+    $HealthCheck = new HealthCheck();
+
+    $retorno = $HealthCheck->check($response, $request->getParsedBody() );
+    return $retorno;
+}  );
+
+
+$app->post('/Auth/', function ($request, $response, $args)  use ($app )   {
+      require_once("include/class_auth.php");
 
      $Auth = new Auth();
 
 
-
    // $response->getBody()->write("It works! This is the default welcome page.");
-
+ //   var_dump($request->getParsedBody() );
 //    $retorno = $Auth->Autenticar($response, $request->getQueryParams() );
     $retorno = $Auth->Autenticar($response, $request->getParsedBody() );
 
-    //var_dump($retorno);
+  //  var_dump($retorno);
 
    return $retorno;
 
