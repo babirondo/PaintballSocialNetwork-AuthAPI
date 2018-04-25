@@ -51,5 +51,18 @@ $app->post('/Auth/', function ($request, $response, $args)  use ($app )   {
 
 }  );
 
+
+$app->post('/NewUser/', function ($request, $response, $args)  use ($app )   {
+    require_once("include/class_auth.php");
+
+    $Auth = new Auth();
+    $retorno = $Auth->NovoUsuario($response, $request->getParsedBody() );
+
+    return $retorno;
+
+
+}  );
+
+
 $app->run();
 
