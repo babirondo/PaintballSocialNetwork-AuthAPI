@@ -5,13 +5,17 @@ set_time_limit(2);
 class Globais{
 
 
+    public $env;
 
     function __construct( ){
 
-        $env = "prod";
-        //$env = "local";
+        if ( $_SERVER["HOME"] == "/home/pb")
+            $this->env = "prod";
+        else
+            $this->env = "local";
 
-        switch($env){
+        switch($this->env){
+
             case("local");
                 $servidor= "http://localhost:81";
                 $this->localhost = "localhost";
