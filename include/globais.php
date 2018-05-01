@@ -24,8 +24,8 @@ class Globais{
             case("prod");
                 $servidor= "http://pb.mundivox.rio";
                 $this->localhost = "localhost";
-                $this->username = "postgres";
-                $this->password = "bruno";
+                $this->username = "pb";
+                $this->password = "Rodr1gues";
                 $this->db ="Usuarios";
                 $this->verbose=1;
             break;
