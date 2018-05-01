@@ -26,7 +26,7 @@ class Globais{
                 $this->localhost = "localhost";
                 $this->username = "pb";
                 $this->password = "Rodr1gues";
-                $this->db ="Usuarios";
+                $this->db ="usuarios";
                 $this->verbose=1;
             break;
 
