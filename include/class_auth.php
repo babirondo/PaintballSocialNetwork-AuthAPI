@@ -8,6 +8,7 @@ class Auth{
         require("include/class_db.php");
         $this->con = new db();
         $this->con->conecta();
+        set_time_limit(10);
     }
 
     function NovoUsuario(  $response, $jsonRAW){
