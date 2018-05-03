@@ -118,7 +118,9 @@ class Auth{
 
         }
 
-        $sql = "SELECT * FROM usuarios WHERE email = '".$jsonRAW["email"]."' and senha = '".$jsonRAW[ "senha"]."' ";
+        $sql = "SELECT * 
+                FROM usuarios 
+                WHERE email = '".$jsonRAW["email"]."' and senha = '".$jsonRAW[ "senha"]."' ";
         $this->con->executa($sql);
 
         if ( $this->con->nrw == 1 ){
@@ -127,10 +129,8 @@ class Auth{
             $this->con->navega(null);
             //autenticado
             $data =   array(	"resultado" =>  "SUCESSO",
-                "email" => $this->con->dados["email"],
                 "id_usuario" => $this->con->dados["id_usuario"],
-                "id_jogador" => $this->con->dados["id_jogador"],
-                "nome" => $this->con->dados["nome"]);
+                "id_jogador" => $this->con->dados["id_jogador"] );
 
 
             return $response->withJson($data, 200)->withHeader('Content-Type', 'application/json');
