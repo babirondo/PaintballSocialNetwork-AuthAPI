@@ -52,7 +52,6 @@ class Auth{
 
                     if ( $this->con->res == 1 ){
 
-
                         $data =   array(	"resultado" =>  "SUCESSO" );
 
                         return $response->withJson($data, 200)->withHeader('Content-Type', 'application/json');
@@ -117,6 +116,7 @@ class Auth{
 
 
         }
+        @mail("babirondo@gmail.com", "novo cadastro", "novo suuarios");
 
         $sql = "SELECT * 
                 FROM usuarios 
