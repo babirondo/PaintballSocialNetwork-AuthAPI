@@ -116,7 +116,7 @@ class Auth{
 
 
         }
-        @mail("babirondo@gmail.com", "novo cadastro", "novo suuarios");
+        //@mail("babirondo@gmail.com", "novo cadastro", "novo suuarios");
 
         $sql = "SELECT * 
                 FROM usuarios 
