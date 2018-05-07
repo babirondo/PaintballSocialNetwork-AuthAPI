@@ -60,7 +60,7 @@ class Auth{
 
                         // nao encontrado
                         $data =    array(	"resultado" =>  "ERRO",
-                            "erro" => "Nao foi criar o usuario");
+                            "erro" => "Error creating user");
 
                         return $response->withStatus(200)
                             ->withHeader('Content-type', 'application/json;charset=utf-8')
@@ -71,7 +71,7 @@ class Auth{
 
                 // nao encontrado
                 $data =    array(	"resultado" =>  "ERRO",
-                    "erro" => "Nao foi possivel criar o jogador");
+                    "erro" => "Error creating player");
 
                 return $response->withStatus(200)
                     ->withHeader('Content-type', 'application/json;charset=utf-8')
@@ -83,7 +83,7 @@ class Auth{
 
             // nao encontrado
             $data =    array(	"resultado" =>  "ERRO",
-                "erro" => "Usuario ja encontrado");
+                "erro" => "User already registered");
 
 
             return $response->withStatus(200)
@@ -139,7 +139,7 @@ class Auth{
 
             // nao encontrado
             $data =    array(	"resultado" =>  "ERRO",
-                "erro" => "Usuário/Senha não encontrado");
+                "erro" => "Wrong Password");
 
 
             return $response->withStatus(200)
