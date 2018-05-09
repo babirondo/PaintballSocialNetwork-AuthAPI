@@ -13,7 +13,7 @@ class Globais{
         if ( $_SERVER["CONTEXT_DOCUMENT_ROOT"] == "/var/www/html")
             $this->banco = $this->env = "prod";
         else{
-            $this->banco= "prod";
+            $this->banco= "local";
             $this->env = "local";
         }
 
@@ -36,7 +36,7 @@ class Globais{
                 $this->localhost = "localhost";
                 $this->username = "postgres";
                 $this->password = "bruno";
-                $this->db ="Usuarios";
+                $this->db ="usuarios_local";
                 break;
 
             case("prod");
