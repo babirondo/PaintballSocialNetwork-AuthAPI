@@ -1,7 +1,7 @@
 <?php
 namespace raiz;
 set_time_limit(2);
-//error_reporting(E_ALL ^ E_DEPRECATED ^E_NOTICE);
+error_reporting(E_ALL ^ E_DEPRECATED ^E_NOTICE);
 class Globais{
 
 
@@ -47,6 +47,10 @@ class Globais{
                 break;
 
         }
+
+
+        $this->Authentication_endpoint = $servidor."/PaintballSocialNetwork-AuthAPI/Auth/";
+        $this->healthcheck = $servidor."/PaintballSocialNetwork-AuthAPI/healthcheck/";
 
     }
 
