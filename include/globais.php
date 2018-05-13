@@ -51,6 +51,7 @@ class Globais{
 
         $this->Authentication_endpoint = $servidor."/PaintballSocialNetwork-AuthAPI/Auth/";
         $this->healthcheck = $servidor."/PaintballSocialNetwork-AuthAPI/healthcheck/";
+        $this->NewUser_endpoint = $servidor."/PaintballSocialNetwork-AuthAPI/NewUser/";
 
     }
 

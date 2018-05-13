@@ -44,15 +44,17 @@ class Auth{
             $this->con->executa($sql, 1);
 
             if ( $this->con->res == 1 ){
-
+                    $idjogador = $this->con->dados["id_jogador"];
 
                     $sql = "INSERT INTO usuarios (email, senha, id_jogador)
-                            VALUES('".$jsonRAW['email']."','".$jsonRAW['senha1']."','".$this->con->dados["id_jogador"]."' ) ";
+                            VALUES('".$jsonRAW['email']."','".$jsonRAW['senha1']."','".$idjogador."' ) ";
                     $this->con->executa($sql, 1);
 
                     if ( $this->con->res == 1 ){
 
                         $data =   array(	"resultado" =>  "SUCESSO" );
+                        $data["idjogador"] = $idjogador;
+
 
                         return $response->withJson($data, 200)->withHeader('Content-Type', 'application/json');
                     }

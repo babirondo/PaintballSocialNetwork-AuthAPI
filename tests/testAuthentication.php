@@ -16,8 +16,38 @@ class AuthenticationTest extends PHPUnit\Framework\TestCase
 
     }
 
+    public function testPost_NewUser()
+    {
+        set_time_limit(10);
+        $rand = rand(500,8500);
+        $nome = "test John Doe ".$rand;
+        $email = "$rand@test.com";
 
-    //TODO:         $this->NewUser_endpoint = $servidor."/PaintballSocialNetwork-AuthAPI/NewUser/";
+        $senha1 = "$rand";
+        $senha2 = "$rand";
+
+        $JSON = json_decode( "  {\"nome\":\"$nome\",\"email\":\"$email\",\"senha1\":\"$senha1\",\"senha2\":\"$senha2\"} " , true);
+        if ($JSON == NULL ) die(" JSON erro de formacao");
+
+        $trans = null;$trans = array(":idtorneio" => null );
+        $response = $this->client->request('POST', strtr($this->Globais->NewUser_endpoint, $trans)
+
+            , array(
+                'headers' => array('Content-type' => 'application/x-www-form-urlencoded'),
+                'timeout' => 10, // Response timeout
+                'form_params' => $JSON,
+                'connect_timeout' => 10 // Connection timeout
+
+
+            )
+        );
+        $jsonRetorno = json_decode($response->getBody()->getContents(), 1);
+        //  var_dump($jsonRetorno);
+
+        $this->assertEquals('SUCESSO', $jsonRetorno["resultado"] );
+
+    }
+
     public function testPost_invalidAuthentication()
     {
 
@@ -31,7 +61,7 @@ class AuthenticationTest extends PHPUnit\Framework\TestCase
                     'senha' => 'brxuno'
 
                 ),
-                'debug' => true,
+
                 'http_errors' => true
             )
         );
@@ -55,7 +85,7 @@ class AuthenticationTest extends PHPUnit\Framework\TestCase
                     'senha' => 'bruno'
                 ),
                 'timeout' => 10,
-                'debug' => true,
+
             )
         );
         $jsonRetorno = json_decode($response->getBody()->getContents() ,1);
@@ -75,7 +105,7 @@ class AuthenticationTest extends PHPUnit\Framework\TestCase
                 'headers' => array('Content-type' => 'application/x-www-form-urlencoded'),
 
                 'timeout' => 10,
-                'debug' => true,
+
             )
         );
         $jsonRetorno = json_decode($response->getBody()->getContents() ,1);
