@@ -38,7 +38,7 @@ class Auth{
         if ( $this->con->nrw == 0 ){
 
 
-            $sql = "INSERT INTO jogadores (nome)
+            $sql = "INSERT INTO jogadores (nome )
                 VALUES('".$jsonRAW['nome']."')
                 RETURNING id_jogador";
             $this->con->executa($sql, 1);
@@ -46,8 +46,8 @@ class Auth{
             if ( $this->con->res == 1 ){
                     $idjogador = $this->con->dados["id_jogador"];
 
-                    $sql = "INSERT INTO usuarios (email, senha, id_jogador)
-                            VALUES('".$jsonRAW['email']."','".$jsonRAW['senha1']."','".$idjogador."' ) ";
+                    $sql = "INSERT INTO usuarios (email, senha, id_jogador, usuarioTeste)
+                            VALUES('".$jsonRAW['email']."','".$jsonRAW['senha1']."','".$idjogador."' ,'".(($jsonRAW['usuarioTeste'])?$jsonRAW['usuarioTeste']:"null")."') ";
                     $this->con->executa($sql, 1);
 
                     if ( $this->con->res == 1 ){
