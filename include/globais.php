@@ -24,7 +24,7 @@ class Globais{
                 break;
 
             case("prod");
-                $servidor= "http://pb.mundivox.rio";
+                $servidor= "http://-";
                 $this->verbose=1;
                 break;
 
