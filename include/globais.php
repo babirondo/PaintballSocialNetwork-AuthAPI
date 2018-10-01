@@ -10,8 +10,8 @@ class Globais{
 
     function __construct( ){
 
-        $this->banco= "local";
-        $this->env = "local";
+        $this->banco= "prod";
+        $this->env = "prod";
 
         $this->verbose=1;
 
@@ -34,7 +34,7 @@ class Globais{
                 $this->username = "postgres";
                 $this->password = "bruno";
                 $this->db ="usuarios";
-                break;
+            break;
 
         }
 
