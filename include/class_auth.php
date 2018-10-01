@@ -38,7 +38,7 @@ class Auth{
         if ( $this->con->nrw == 0 ){
 
             //TODO: criar chamada para criar jogador via API
-
+            $API = new class_API();
             $trans=null;
             $APICall_CriarJogador = $API->CallAPI("POST",  strtr(  $Globais->NovoJogador_endpoint, $trans)  ) ;
 
