@@ -30,26 +30,26 @@ class class_API
                     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
                     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
                 }
-                if ($verbose) $debug.= " <BR><FONT COLOR='red'> curl -H 'Content-Type: application/json' -X $method -d '$data' $url </FONT>";
+                if ($verbose) $debug.= " \n\r\n <BR><FONT COLOR='red'> curl -H 'Content-Type: application/json' -X $method -d '$data' $url </FONT>";
 
             break;
             case "PUT":
                 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
                 curl_setopt($curl, CURLOPT_POSTFIELDS,http_build_query(json_decode($data)));
 
-                if ($verbose) $debug .=  " <BR><FONT COLOR='green'> curl -H 'Content-Type: application/json' -X $method -d ' $data' $url </></FONT> ";
+                if ($verbose) $debug .=  " \n\r\n  <BR><FONT COLOR='green'> curl -H 'Content-Type: application/json' -X $method -d ' $data' $url </></FONT> ";
                 break;
 
             case "DELETE":
                 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "DELETE");
             //    curl_setopt($curl, CURLOPT_POSTFIELDS,http_build_query(json_decode($data)));
 
-                if ($verbose) $debug .=  " <BR><FONT COLOR='green'> curl -H 'Content-Type: application/json' -X $method -d '$data' $url </FONT> ";
+                if ($verbose) $debug .=  " \n\r\n  <BR><FONT COLOR='green'> curl -H 'Content-Type: application/json' -X $method -d '$data' $url </FONT> ";
                 break;
 
             default:
                 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
-                if ($verbose) $debug.=  " <BR> <FONT COLOR='#9acd32'>   $url </FONT> ";
+                if ($verbose) $debug.=  "  \n\r\n <BR> <FONT COLOR='#9acd32'>   $url </FONT> ";
                 if ($data) $url = sprintf("%s?%s", $url, http_build_query($data));
 
         }
