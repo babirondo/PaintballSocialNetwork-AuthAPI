@@ -44,7 +44,7 @@ class Auth{
             require_once("include/class_api.php");
             $API = new class_API();
             $trans=null;
-            $APICall_CriarJogador = $API->CallAPI("POST",  strtr(  $Globais->NovoJogador_endpoint, $trans)  ) ;
+            $APICall_CriarJogador = $API->CallAPI("POST",  strtr(  $Globais->NovoJogador_endpoint, $trans) , json_encode($jsonRAW) ) ;
 
             if ( $APICall_CriarJogador["id_jogador"] > 0 ){
                     $idjogador = $APICall_CriarJogador["id_jogador"];
