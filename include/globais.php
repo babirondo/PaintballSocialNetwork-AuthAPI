@@ -42,6 +42,7 @@ class Globais{
         $this->Authentication_endpoint = $servidor["autenticacao"]."/PaintballSocialNetwork-AuthAPI/Auth/";
         $this->healthcheck = $servidor["autenticacao"]."/PaintballSocialNetwork-AuthAPI/healthcheck/";
         $this->NewUser_endpoint = $servidor["autenticacao"]."/PaintballSocialNetwork-AuthAPI/NewUser/";
+        $this->NovoJogador_endpoint = $servidor["players"]."/PaintballSocialNetwork-Players/Players/";
 
     }
 

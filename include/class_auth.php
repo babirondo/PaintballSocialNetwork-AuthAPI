@@ -37,14 +37,13 @@ class Auth{
 
         if ( $this->con->nrw == 0 ){
 
+            //TODO: criar chamada para criar jogador via API
 
-            $sql = "INSERT INTO jogadores (nome )
-                VALUES('".$jsonRAW['nome']."')
-                RETURNING id_jogador";
-            $this->con->executa($sql, 1);
+            $trans=null;
+            $APICall_CriarJogador = $API->CallAPI("POST",  strtr(  $Globais->NovoJogador_endpoint, $trans)  ) ;
 
-            if ( $this->con->res == 1 ){
-                    $idjogador = $this->con->dados["id_jogador"];
+            if ( $APICall_CriarJogador["id_jogador"] > 0 ){
+                    $idjogador = $APICall_CriarJogador["id_jogador"];
 
                     $sql = "INSERT INTO usuarios (email, senha, id_jogador, usuarioTeste)
                             VALUES('".$jsonRAW['email']."','".$jsonRAW['senha1']."','".$idjogador."' ,'".(($jsonRAW['usuarioTeste'])?$jsonRAW['usuarioTeste']:"null")."') ";
@@ -120,8 +119,8 @@ class Auth{
         }
         //@mail("babirondo@gmail.com", "novo cadastro", "novo suuarios");
 
-        $sql = "SELECT * 
-                FROM usuarios 
+        $sql = "SELECT *
+                FROM usuarios
                 WHERE email = '".$jsonRAW["email"]."' and senha = '".$jsonRAW[ "senha"]."' ";
         $this->con->executa($sql);
 
