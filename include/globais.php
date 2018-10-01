@@ -10,7 +10,7 @@ class Globais{
 
     function __construct( ){
 
-        $this->banco= "prod";
+        $this->banco= "local";
         $this->env = "local";
 
         $this->verbose=1;
@@ -23,10 +23,10 @@ class Globais{
         switch($this->banco){
 
             case("local");
-                $this->localhost = "localhost";
-                $this->username = "postgres";
-                $this->password = "bruno";
-                $this->db ="usuarios_local";
+            $this->localhost = "localhost";
+            $this->username = "postgres";
+            $this->password = "bruno";
+            $this->db ="usuarios";
                 break;
 
             case("prod");
