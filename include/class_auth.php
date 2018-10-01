@@ -38,6 +38,9 @@ class Auth{
         if ( $this->con->nrw == 0 ){
 
             //TODO: criar chamada para criar jogador via API
+            require_once("include/globais.php");
+            $Globais = new Globais();
+
             require_once("include/class_api.php");
             $API = new class_API();
             $trans=null;
