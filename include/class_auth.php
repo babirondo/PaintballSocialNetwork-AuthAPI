@@ -43,9 +43,11 @@ class Auth{
 
             require_once("include/class_api.php");
             $API = new class_API();
-            $trans=null;
-            echo "URL: ".$Globais->NovoJogador_endpoint;
-            $APICall_CriarJogador = $API->CallAPI("POST",  strtr(  $Globais->NovoJogador_endpoint, $trans) , json_encode($jsonRAW) ) ;
+
+
+            $APICall_CriarJogador = $API->CallAPI("POST",    $Globais->NovoJogador_endpoint , json_encode($jsonRAW) ) ;
+
+            var_dump($APICall_CriarJogador);
 
             if ( $APICall_CriarJogador["id_jogador"] > 0 ){
                     $idjogador = $APICall_CriarJogador["id_jogador"];
