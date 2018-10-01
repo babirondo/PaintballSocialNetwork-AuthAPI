@@ -10,25 +10,16 @@ class Globais{
 
     function __construct( ){
 
+        $this->banco= "prod";
+        $this->env = "local";
 
+        $this->verbose=1;
 
-          $this->banco= "prod";
-          $this->env = "local";
+        $servidor["UI"] = $servidor["frontend"] = "http://34.247.245.249";
+        $servidor["autenticacao"] = "http://34.242.188.167";
+        $servidor["players"] = "http://54.171.155.88";
+        $servidor["campeonato"] = "http://34.242.140.31";
 
-
-        switch($this->env){
-
-            case("local");
-                $servidor= "http://localhost:81";
-                $this->verbose=1;
-                break;
-
-            case("prod");
-                $servidor= "http://-";
-                $this->verbose=1;
-                break;
-
-        }
         switch($this->banco){
 
             case("local");
@@ -48,9 +39,9 @@ class Globais{
         }
 
 
-        $this->Authentication_endpoint = $servidor."/PaintballSocialNetwork-AuthAPI/Auth/";
-        $this->healthcheck = $servidor."/PaintballSocialNetwork-AuthAPI/healthcheck/";
-        $this->NewUser_endpoint = $servidor."/PaintballSocialNetwork-AuthAPI/NewUser/";
+        $this->Authentication_endpoint = $servidor["autenticacao"]."/PaintballSocialNetwork-AuthAPI/Auth/";
+        $this->healthcheck = $servidor["autenticacao"]."/PaintballSocialNetwork-AuthAPI/healthcheck/";
+        $this->NewUser_endpoint = $servidor["autenticacao"]."/PaintballSocialNetwork-AuthAPI/NewUser/";
 
     }
 
