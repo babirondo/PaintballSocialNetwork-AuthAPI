@@ -15,10 +15,11 @@ class Globais{
 
         $this->verbose=1;
 
-        $servidor["UI"] = $servidor["frontend"] = "http://34.247.245.249";
-        $servidor["autenticacao"] = "http://34.242.188.167";
+        $servidor["UI"] = $servidor["frontend"] = "http://34.254.94.38";
+        $servidor["autenticacao"] = "http://34.245.228.106";
         $servidor["players"] = "http://54.171.155.88";
         $servidor["campeonato"] = "http://34.242.140.31";
+
 
         switch($this->banco){
 
