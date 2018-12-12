@@ -47,7 +47,7 @@ class Auth{
 
             $APICall_CriarJogador = $API->CallAPI("POST",    $Globais->NovoJogador_endpoint , json_encode($jsonRAW) ) ;
 
-           
+
             if ( $APICall_CriarJogador["id_jogador"] > 0 ){
                     $idjogador = $APICall_CriarJogador["id_jogador"];
 

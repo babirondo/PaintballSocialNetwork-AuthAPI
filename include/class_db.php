@@ -11,10 +11,10 @@ class db
     {
         require_once("include/globais.php");
         $this->globais = new Globais();
-        //	echo "\n Conectando no banco: ".$this->globais->banco ;
         try {
-            $this->pdo = new PDO("pgsql:host=".$this->globais->localhost."
-			dbname=".  $this->globais->db ,
+            $str = "pgsql:host=".$this->globais->localhost." dbname=".  $this->globais->db;
+            //echo "\n Conectando no banco: ".$str;
+            $this->pdo = new PDO( $str ,
                 $this->globais->username,
                 $this->globais->password);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

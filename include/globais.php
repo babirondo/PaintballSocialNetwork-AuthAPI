@@ -10,31 +10,31 @@ class Globais{
 
     function __construct( ){
 
-        $this->banco= "prod";
-        $this->env = "prod";
+        $this->env = $this->banco= "local";
 
         $this->verbose=1;
 
-        $servidor["UI"] = $servidor["frontend"] = "http://52.50.253.182";
-        $servidor["autenticacao"] = "http://34.251.246.231";
-        $servidor["campeonato"] = "http://34.245.173.246";
-        $servidor["players"] = "http://34.245.105.70";
+        $servidor["UI"] = $servidor["frontend"] = "http://192.168.0.150:81";
+        $servidor["autenticacao"] = "http://192.168.0.150:82";
+        $servidor["players"] = "http://192.168.0.150:83";
+        $servidor["campeonato"] = "http://192.168.0.150:81";
 
+        $servidor["bancodados_campeonato"] = "192.168.0.150";
 
 
         switch($this->banco){
 
             case("local");
-              $this->localhost = "localhost";
+              $this->localhost = $servidor["bancodados_campeonato"];
               $this->username = "postgres";
-              $this->password = "bruno";
-              $this->db ="usuarios";
+              $this->password = "postgres";
+              $this->db ="authentication";
             break;
 
             case("prod");
                 $this->localhost = "localhost";
                 $this->username = "postgres";
-                $this->password = "bruno";
+                $this->password = "postgres";
                 $this->db ="usuarios";
             break;
 
