@@ -1,7 +1,6 @@
 <?php
 namespace raiz;
-set_time_limit(2);
-error_reporting(E_ALL ^ E_DEPRECATED ^E_NOTICE);
+
 class Globais{
 
 
@@ -20,14 +19,17 @@ class Globais{
         $servidor["campeonato"] = "http://192.168.0.150:81";
 
         $servidor["bancodados_campeonato"] = "192.168.0.150";
+        $servidor["bancodados_authentication"] = "172.18.0.7";
 
 
         switch($this->banco){
 
             case("local");
-              $this->localhost = $servidor["bancodados_campeonato"];
+              $this->banco = "Postgres";
+              $this->localhost = $servidor["bancodados_authentication"];
               $this->username = "postgres";
               $this->password = "postgres";
+              $this->port = 5432;
               $this->db ="authentication";
             break;
 

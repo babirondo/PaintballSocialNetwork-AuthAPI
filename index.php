@@ -1,19 +1,10 @@
 <?php
 namespace raiz;
-//error_reporting(E_ALL  );
-//ccccccc
 
 use Slim\Views\PhpRenderer;
 
 include "vendor/autoload.php";
 
-
-/*
-$app = new App( array(
-    'debug' => true,
-    'templates.path' => './templates'
-) );
-*/
 $app = new \Slim\App(['settings' => ['displayErrorDetails' => true]]);
 
 $container = $app->getContainer();
@@ -65,4 +56,3 @@ $app->post('/NewUser/', function ($request, $response, $args)  use ($app )   {
 
 
 $app->run();
-

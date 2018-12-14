@@ -1,15 +1,25 @@
 <?php
 namespace raiz;
-
-error_reporting(E_ALL  );
-
+error_reporting( E_ALL ^E_NOTICE ); 
 class Auth{
+    public $Globais ;
+
     function __construct( ){
-        require("include/class_db.php");
-        $this->con = new db();
-        $this->con->conecta();
-        set_time_limit(10);
-    }
+
+        require_once 'vendor/autoload.php'; // Autoload files using Composer autoload
+
+        require_once("include/globais.php");
+        $this->Globais = new Globais();
+
+        $this->con = new \babirondo\classbd\db();
+        $this->con->conecta( $this->Globais->banco ,
+                              $this->Globais->localhost,
+                              $this->Globais->db,
+                              $this->Globais->username,
+                              $this->Globais->password,
+                              $this->Globais->port);
+
+   }
 
     function NovoUsuario(  $response, $jsonRAW){
 
@@ -37,15 +47,10 @@ class Auth{
 
         if ( $this->con->nrw == 0 ){
 
-
-            require_once("include/globais.php");
-            $Globais = new Globais();
-
-            require_once("include/class_api.php");
-            $API = new class_API();
+            $API = new\babirondo\REST\RESTCall();
 
 
-            $APICall_CriarJogador = $API->CallAPI("POST",    $Globais->NovoJogador_endpoint , json_encode($jsonRAW) ) ;
+            $APICall_CriarJogador = $API->CallAPI("POST",    $this->Globais->NovoJogador_endpoint , json_encode($jsonRAW) ) ;
 
 
             if ( $APICall_CriarJogador["id_jogador"] > 0 ){
