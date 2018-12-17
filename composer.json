@@ -3,7 +3,7 @@
     "slim/slim": "^3.5",
     "slim/twig-view": "^2.1",
     "slim/php-view": "^2.2",
-    "babirondo/classbd": "0.6",
+    "babirondo/classbd": "0.9",
     "babirondo/rest-api": "2.0",
     "guzzlehttp/guzzle": "6.1"
   },
