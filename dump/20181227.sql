@@ -130,6 +130,21 @@ COPY public.usuarios (id_usuario, senha, id_jogador, email, usuarioteste) FROM s
 46	1	55	q1ddd	null
 47	w1	56	w1	null
 48	n	57	n	null
+49	6586	58	6586@test.com	null
+50	6734	59	6734@test.com	null
+51	2765	60	2765@test.com	null
+52	6964	61	6964@test.com	null
+53	1660	62	1660@test.com	null
+54	4184	63	4184@test.com	null
+55	7649	64	7649@test.com	null
+56	6654	65	6654@test.com	null
+57	3032	66	3032@test.com	null
+58	7016	67	7016@test.com	null
+59	4559	68	4559@test.com	null
+60	5169	69	5169@test.com	null
+61	6472	70	6472@test.com	null
+62	6046	71	6046@test.com	null
+63	7600	72	7600@test.com	null
 \.
 
 
@@ -151,7 +166,7 @@ SELECT pg_catalog.setval('public.jogadores_id_jogador_seq', 42, true);
 -- Name: usuarios_id_usuario_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.usuarios_id_usuario_seq', 48, true);
+SELECT pg_catalog.setval('public.usuarios_id_usuario_seq', 63, true);
 
 
 --
