@@ -148,6 +148,43 @@ COPY public.usuarios (id_usuario, senha, id_jogador, email, usuarioteste) FROM s
 64	2473	73	2473@test.com	null
 65	6736	74	6736@test.com	null
 66	6419	75	6419@test.com	null
+67	6675	76	6675@test.com	null
+68	4867	77	4867@test.com	null
+69	1301	78	1301@test.com	null
+70	4542	79	4542@test.com	null
+71	5078	80	5078@test.com	null
+72	1355	81	1355@test.com	null
+73	2283	82	2283@test.com	null
+74	4759	83	4759@test.com	null
+75	3542	84	3542@test.com	null
+76	4446	85	4446@test.com	null
+77	4505	86	4505@test.com	null
+78	4186	87	4186@test.com	null
+79	1098	88	1098@test.com	null
+80	1590	89	1590@test.com	null
+81	3104	90	3104@test.com	null
+82	4529	91	4529@test.com	null
+83	8091	92	8091@test.com	null
+84	4579	93	4579@test.com	null
+85	2988	94	2988@test.com	null
+86	3363	95	3363@test.com	null
+87	3776	96	3776@test.com	null
+88	7372	97	7372@test.com	null
+89	4859	98	4859@test.com	null
+90	2935	99	2935@test.com	null
+91	5317	100	5317@test.com	null
+92	3743	101	3743@test.com	null
+93	3838	102	3838@test.com	null
+94	3276	103	3276@test.com	null
+95	7053	104	7053@test.com	null
+96	7253	105	7253@test.com	null
+97	7238	106	7238@test.com	null
+98	1653	107	1653@test.com	null
+99	1013	108	1013@test.com	null
+100	8019	109	8019@test.com	null
+101	7896	110	7896@test.com	1
+102	5781	111	5781@test.com	1
+103	4881	112	4881@test.com	1
 \.
 
 
@@ -169,7 +206,7 @@ SELECT pg_catalog.setval('public.jogadores_id_jogador_seq', 42, true);
 -- Name: usuarios_id_usuario_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.usuarios_id_usuario_seq', 66, true);
+SELECT pg_catalog.setval('public.usuarios_id_usuario_seq', 103, true);
 
 
 --

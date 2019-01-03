@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="REST API Test Suite" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.096245">
+    <testsuite name="AuthenticationTest" file="/var/www/html/PaintballSocialNetwork-AuthAPI/tests/testAuthentication.php" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.096245">
+      <testcase name="testGet_HealthCheck" class="AuthenticationTest" classname="AuthenticationTest" file="/var/www/html/PaintballSocialNetwork-AuthAPI/tests/testAuthentication.php" line="17" assertions="1" time="0.039579"/>
+      <testcase name="testPost_NewUser" class="AuthenticationTest" classname="AuthenticationTest" file="/var/www/html/PaintballSocialNetwork-AuthAPI/tests/testAuthentication.php" line="33" assertions="1" time="0.034624"/>
+      <testcase name="testPost_invalidAuthentication" class="AuthenticationTest" classname="AuthenticationTest" file="/var/www/html/PaintballSocialNetwork-AuthAPI/tests/testAuthentication.php" line="56" assertions="1" time="0.010689"/>
+      <testcase name="testPost_validAuthentication" class="AuthenticationTest" classname="AuthenticationTest" file="/var/www/html/PaintballSocialNetwork-AuthAPI/tests/testAuthentication.php" line="72" assertions="1" time="0.011353"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
